@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int somatorio(int N) {
+    if (N == 1) {
+        return 1;
+    } else {
+        return N + somatorio(N - 1);
+    }
+}
+
+int main() {
+    int n = 5;
+    int resultado = somatorio(n);
+    printf("O somatório de %d é %d\n", n, resultado);
+    return 0;
+}
